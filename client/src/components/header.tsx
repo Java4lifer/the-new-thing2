@@ -8,8 +8,10 @@ const Header = styled.header `
 `
 
 export default () => <>
+    <Header>
     <header>
         Header
         <span>teste</span>
     </header>
+    </Header>
 </>

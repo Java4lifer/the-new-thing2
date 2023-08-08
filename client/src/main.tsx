@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
+import { BrowserRouter, Route, Routes} from 'react-router-dom'
 import Home from './templates/home'
 import Login from './templates/Login'
-import { BrowserRouter, Route, Routes} from 'react-router-dom'
 import NotFound from './templates/NotFound'
 
 const root = document.getElementById("root")!
@@ -15,9 +15,9 @@ ReactDOM.createRoot(root).render(
       <Routes>
         <Route path='/' Component={Login}/>
         <Route path='/home' Component={Home}/>
-        <Route path='*' Component={NotFound}/>
+        <Route path='/*' Component={NotFound}/>
       </Routes>
     </BrowserRouter>
     
-  </React.StrictMode>,
+  </React.StrictMode>
 )
