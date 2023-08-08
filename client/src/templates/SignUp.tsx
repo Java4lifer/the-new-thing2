@@ -1,5 +1,5 @@
 import {styled} from "styled-components";
-import LoginForm from "../components/LoginForm";
+import SignForm from "../components/SignForm";
 
 const Container = styled.div`
 
@@ -18,21 +18,20 @@ const Container = styled.div`
         position: absolute;
         right: 0;
         z-index: 1;
-        transform: skew(15deg) translateX(50%);
-        box-shadow: -2px -2px 5px #000000;
+        transform: skew(40deg) translateX(50%);
+        box-shadow: -3px -3px 4px #000000;
     }
 
     > * {
         position: relative;
         z-index: 9;
     }
-
 `
 
 export default () => <>
 
 <Container>
-    <LoginForm />
+    <SignForm />
 </Container>
 
 </>

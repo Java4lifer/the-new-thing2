@@ -131,7 +131,7 @@ export default () => <React.Fragment>
             <StupidButton>Forgot login?</StupidButton>
             </div>
             <div className="sign-up">
-                <Link to="/signup">Sign Up</Link>
+                <Link to="/signup">Sign In</Link>
             </div>
         </div>
     </DeForm>
