@@ -11,15 +11,14 @@ const root = document.getElementById("root")!
 
 ReactDOM.createRoot(root).render(
   <React.StrictMode>
-    {/* class is wrong */}
     <BrowserRouter>
       <Routes>
         <Route path='/' Component={Login}/>
         <Route path='/signup' Component={SignUp}/>
         <Route path='/home' Component={Home}/>
-        <Route path='/*' Component={NotFound}/>
+        <Route path='*' Component={NotFound}/>
       </Routes>
     </BrowserRouter>
     
-  </React.StrictMode>
+  </React.StrictMode>,
 )

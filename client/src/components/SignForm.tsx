@@ -1,7 +1,6 @@
 import { styled } from 'styled-components'
 
-const DeForm = styled.form`
-
+const DeForm2 = styled.form`
 
 font-family:'Anton', sans-serif;
 font-family: 'Hind Madurai', sans-serif;
@@ -85,54 +84,48 @@ box-shadow: 2px 2px 2px grey;
             text-decoration: none;
         }
     }
-`
-const AccentButton = styled.button`
 
-border: 3px solid #ec017e;
-    color: #ec017e;
-    background-color: transparent;
-    font-size: 1.25rem;
-    padding: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-
-`
-
-const StupidButton = styled.button`
-
-border: 0 none;
-    color: #222222;
-    background-color: transparent;
-    font-size: 1.25rem;
-    font-weight: 500;
-    padding: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-
+    button {
+        border: 0 none;
+        color: #222222;
+        background-color: transparent;
+        font-size: 1.25rem;
+        font-weight: 500;
+        padding: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 `
 
-export default () => <React.Fragment>
-    <DeForm>
+
+export default () => <>
+    <DeForm2>
         <div className="container">
             <div className="title">
-                <h1>Awoken be the tarnished</h1>
-                <h2>A throne left to ash and his legacy soon to be yours</h2>
+                <h1>Ignite the Chosen</h1>
             </div>
             <div className="input">
                 <label>Login</label>
-                <input name="logina" />
+                <input name="logina" placeholder='Username'/>
+            </div>
+            <div className="input">
+                <label>Email</label>
+                <input name="email" placeholder='Email Address'/>
+            </div>
+            <div className="input">
+                <label>Date Of Birth</label>
+                <input type="date" name="bday"/>
             </div>
             <div className="input">
                 <label>Password</label>
-                <input type="password" name="pass" />
+                <input type="password" name="pass" placeholder='Password'/>
             </div>
             <div className="action">
-            <AccentButton>Enter</AccentButton>
-            <StupidButton>Forgot login?</StupidButton>
+            <button className='butts'>Sign up</button>
             </div>
-            <div className="sign-up">
-                <Link to="/signup">Sign In</Link>
+            <div className="log-in">
+                <a href="/">Log In</a>
             </div>
         </div>
-    </DeForm>
-</React.Fragment>
+    </DeForm2>
+</>

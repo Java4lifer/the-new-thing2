@@ -2,7 +2,6 @@ import { styled } from 'styled-components'
 
 const DeForm = styled.form`
 
-
 font-family:'Anton', sans-serif;
 font-family: 'Hind Madurai', sans-serif;
 border: 1px solid white;
@@ -111,7 +110,7 @@ border: 0 none;
 
 `
 
-export default () => <React.Fragment>
+export default () => <>
     <DeForm>
         <div className="container">
             <div className="title">
@@ -131,8 +130,8 @@ export default () => <React.Fragment>
             <StupidButton>Forgot login?</StupidButton>
             </div>
             <div className="sign-up">
-                <Link to="/signup">Sign Up</Link>
+                <a href="/signup">Sign In</a>
             </div>
         </div>
     </DeForm>
-</React.Fragment>
+</>
